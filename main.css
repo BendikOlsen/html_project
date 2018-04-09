@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+#header{
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/header.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#header-content {
+  padding-top: 15%;
+  text-align: center;
+  
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+  font-weight: 700;
+  font-size: 4em;
+}
+
+#section-features{
+  background-color: rgb(240,240,240);
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+#section-distributors{
+  background-color: rgb(230,230,230);
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+#section-cities{
+  background-color: rgb(235,235,235);
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+#section-prices{
+  background-color: rgb(240,240,240);
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+#section-contact{
+  background-color: rgb(230,230,230);
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+.ikon{
+  
+  font-size: 36px;
+
+}
+
+h4{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+
+.om_oss{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/* ======== footer ======== */
+
+#section-footer {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.social-links {
+  list-style: none;
+}
+
+
+.social-links li,
+.footer-nav li {
+    display:inline-block;
+    margin: 10px; 
+}
+
+
+.copyright {
+  color: #888;
+  padding: 5px;
+  text-align:  center;
+}
+
+.social-links li:last-child,
+.footer-nav li :last-child {
+  margin-right: 0;
+}
+
+.social-links li a:visited,
+.social-links li a:link,
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+  color: #a7a6a7;
+}
+
+.fa-facebook-square,
+.fa-twitter,
+.fa-google-plus-g,
+.fa-instagram {
+  transition: color 0.2s;
+}
+
+.fa-facebook-square:hover,
+.fa-facebook-square:active {
+  color:  #3b5999;
+
+}
+
+.fa-twitter:hover,
+.fa-twitter:active {
+  color:  #55acee;
+}
+
+.fa-google-plus-g:hover,
+.fa-google-plus-g:active {
+  color:  #dd4b39;
+}
+.fa-instagram:hover,
+.fa-instagram:active {
+  color:  #e4405f;
+}
