@@ -2,11 +2,11 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
 }
 
 html{
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
 }
 
 #header{
@@ -66,7 +66,7 @@ html{
   color: #D69722; 
 }
 
-h3{
+#header-content h3{
   font-weight: bold;
 }
 
