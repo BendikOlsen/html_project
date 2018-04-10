@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -36,6 +35,52 @@ hr{
   width: 20%;
 }
 
+.button{
+  font-size: 1.2em !important;
+}
+
+.button:link,
+.button:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #e67e22;
+    padding-top:9px;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #e67e22;
+    margin-left: 15px;
+}
+
+.btn-full:hover{
+    background-color: #cf6d17;
+    
+}
+
+.btn-full:active {
+    background-color: #b05d14;
+}
+
+.btn-ghost:hover {
+    background-color: rgba(207, 109, 23, 0.34);
+}
+
+.btn-ghost:active {
+    background-color: rgba(176, 93, 20, 0.52);
+}
+
+
 /* ====== Header section ======= */
 
 #header{
@@ -47,12 +92,24 @@ hr{
   height: 100vh;
 }
 
-#header-content {
-  font-weight: 300;
-  font-size: 4em;
+#logo{
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  width: 200px;
+  height: auto;
+}
+
+.header-content{
   position: absolute;
   left: 20%;
   top: 50%;
+}
+
+#header-text {
+  font-weight: 300;
+  font-size: 4em;
+  margin-bottom: 20px;
 }
 
 #header-content h3{
@@ -60,9 +117,12 @@ hr{
 }
  
 #header-nav{
-  position: absolute;
+  position: fixed;
   right: 20px;
-  top: 20px;
+  top: 7px;
+  background-color: rgba(30,30,30, 0.8);
+  padding: 20px 15px 10px 15px;
+  border-radius: 10px;
 }
 
 #main-nav {
@@ -149,29 +209,25 @@ hr{
 }
 
 
-
-#section-cities{
-  background-color: rgb(235,235,235);
-  padding-top: 7%;
-  padding-bottom: 5%;
-}
-
-/* ====== Prices section ======= */
-
-
-#section-prices{
-  background-color: rgb(240,240,240);
-  padding-top: 7%;
-  padding-bottom: 5%;
-}
-
-
 /* ====== Contact section ======= */
 
 #section-contact{
   background-color: #689CB0;
   padding-top: 7%;
   padding-bottom: 5%;
+}
+
+form{
+  margin-top: 30px;
+}
+
+#submit{
+  margin-top: 60px;
+}
+
+.form-icon{
+  font-size: 2em;
+  color: #e67e22;
 }
 
 /* ======== footer ======== */

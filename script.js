@@ -1,6 +1,6 @@
 $(() => {
 
-  
+
   //ANIMATIONS
   $(document).on("scroll", function() {
     if($("#map").hasClass("hidden")){
@@ -11,14 +11,14 @@ $(() => {
   })
 
   // LINK SCROLLING
+  $("#header-link").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#header").offset().top
+    }, 500)
+  })
   $("#about-link").click(function() {
     $('html, body').animate({
         scrollTop: $("#section-about").offset().top
-    }, 500)
-  })
-  $("#prices-link").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#section-prices").offset().top
     }, 500)
   })
   $("#how-link").click(function() {

@@ -32,24 +32,29 @@
 </head>
 <body>
   <div class="container-fluid" id="header">
+    <img id="logo" src="images/logo.png" alt="Logo image">
     <div id="header-nav" class="row">
       <ul id="main-nav">
-        <li id="about-link"><a>OM OSS</a></li>
-        <li id="how-link"><a>HVORDAN</a></li>
-        <li id="prices-link"><a>PRISER</a></li>
+        <li id="header-link"><a>HOME</a></li>
+        <li id="about-link"><a>TJENESTER</a></li>
+        <li id="how-link"><a>INFO</a></li>
         <li id="contact-link"><a>KONTAKT</a></li>
       </ul>
     </div>
-    <div id="header-content">
-      <h1>PC Fixer'n</h1>
-      <h4>Stort eller lite problem, vi er her for deg</h4>
+    <div class="header-content">
+      <div id="header-text">
+        <h1>Stort eller lite problem</h1>
+        <h2>PC Fixer'n er her for deg</h2>
+      </div>
+      <a class="button btn-full" href="#section-contact">Kontakt oss</a>
+      <a class="button btn-ghost" href="#section-about">Tjenester</a>
     </div>
   </div>
 
   <div id="section-about" class="container-fluid text-justify">
     <div class="row text-center">
       <div class="col-sm-12 offset-md-2 col-md-8 ">
-        <h3>Om oss</h3>
+        <h3>TJENESTER</h3>
         <hr class="header-hr">
         <div class="container">
           <div class="row">
@@ -121,7 +126,7 @@
   <div id="section-how" class="container-fluid">
     <div class="row text-center">
       <div class="col-md-12">
-        <h3>Hvordan</h3>
+        <h3>INFORMASJON</h3>
         <hr class="header-hr">
         <div class="container">
           <div class="row">
@@ -154,69 +159,37 @@
       </div>
     </div>
   </div>
- 
-  <div id="section-prices" class="container-fluid">
+  <div id="section-contact" class="container-fluid">
     <div class="row">
-      <h2>Priser</h2>
-    </div>
-  </div>
-  <div id="section-contact" class="container-fluid text-justify">
-    <div class="row">
-      <div class="col-sm-12 offset-md-2 col-md-8 ">
+      <div class="col-sm-12 offset-md-2 col-md-8 text-center">
         <h3>Ta gjerne kontakt</h3>
         <hr class="header-hr">
-        <form method="post" action="#" class="contact-form">
-          <div class="row">
-            <div class="col-md-4">
-              <label for="name">Name</label>
-            </div>
-            <div class="col-md-4">
-              <input type="text" name="name" id="name" placeholder="Your name" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <label for="email">Email</label>
-            </div>
-            <div class="col-md-4">
-              <input type="email" name="email" id="email" placeholder="Your email" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-3" >
+        <form>
+          <div class="form-group row">
+            <label class="col-sm-1 offset-sm-2 col-form-label"><i class="fas fa-envelope form-icon"></i></label>
+            <div class="col-sm-7">
+              <input type="email" class="form-control" name="email" placeholder="email">
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
-              <label for="find-us">How did you find us</label>
-            </div>
-            <div class="col-md-4">
-              <select name="find-us" id="find-us">
-                <option value="friends" selected>Friends</option>
-                <option value="search">Search engine</option>
-                <option value="ad">Advertisement</option>
-                <option value="other">Other</option>
-            </select>
+          <div class="form-group row">
+            <label class="col-sm-1 offset-sm-2 col-form-label"><i class="fas fa-phone form-icon"></i></label>
+            <div class="col-sm-7">
+              <input type="password" class="form-control" name="phone" placeholder="phone">
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
-              <label for="news">Newsletter</label>
-            </div>
-            <div class="col-md-4">
-              <input type="checkbox" name="news" id="news" checked>Yes please
+          <div class="form-group row">
+            <label class="col-sm-1 offset-sm-2 col-form-label"><i class="far fa-comment form-icon"></i></label>
+            <div class="col-sm-7">
+              <textarea class="form-control" name="message" placeholder="beskjed" rows="3"></textarea>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
-              <label>Drop us a line</label>
-            </div>
-            <div class="col-md-4">
-              <textarea name="message" placeholder="Your message"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <label>&nbsp;</label>
-            </div>
-            <div class="col-md-4">
-              <input type="submit" value="Send it!">
+          <div id="submit" class="form-group row text-center">
+            <div class="col-sm-12">
+              <a class="button btn-full" href="#">Send</a>
             </div>
           </div>
         </form>
