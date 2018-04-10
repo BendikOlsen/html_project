@@ -6,13 +6,41 @@
 
 html{
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
 }
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+hr{
+  background-image: linear-gradient(to right, #D69722, #D69722, #D69722);
+  border: 0;
+  margin: 20px auto 30px auto;
+  
+}
+
+.hidden{
+  display: none;
+}
+
+/* ======= Reusable parts ======= */
+
+.header-hr{
+  height: 2px;
+  width: 10%;
+}
+
+.paragraph-hr{
+  height: 1px;
+  width: 20%;
+}
+
+/* ====== Header section ======= */
 
 #header{
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/header.jpg);
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/header.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -20,27 +48,107 @@ html{
 }
 
 #header-content {
-  padding-top: 15%;
-  text-align: center;
-  
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-  0px 8px 13px rgba(0,0,0,0.1),
-  0px 18px 23px rgba(0,0,0,0.1);
-  font-weight: 700;
+  font-weight: 300;
   font-size: 4em;
+  position: absolute;
+  left: 20%;
+  top: 50%;
 }
 
-#section-features{
+#header-content h3{
+  font-weight: bold;
+}
+ 
+#header-nav{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#main-nav {
+  list-style: none;  
+}
+
+#main-nav li{
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 5px;
+  font-size: 90%;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
+#main-nav li a{
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22 ;
+}
+
+#main-nav li a:hover{
+  border-bottom: 2px solid #e67e22 ;
+  transition: border 0.1s;
+}
+
+/* ======= About section ======= */
+
+
+#section-about{
   background-color:#689CB0;
   padding-top: 7%;
   padding-bottom: 5%;
 }
 
-#section-distributors{
+.about-icon{
+  font-size: 32px;
+  color: #D69722; 
+}
+
+.about-col{
+  margin-top: 40px;
+}
+
+#section-about h4{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 0;
+}
+
+/* ======= How section ======= */
+
+#section-how{
   background-color: rgb(230,230,230);
   padding-top: 7%;
   padding-bottom: 5%;
 }
+
+#map{
+  width: 100%;
+}
+
+.works-step{
+  margin-top: 80px;
+}
+
+.works-step p{
+  font-size: 120%;
+  text-align: left;
+}
+
+.works-step div {
+  color: #D69722;
+  border: 2px solid #D69722;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+
 
 #section-cities{
   background-color: rgb(235,235,235);
@@ -48,41 +156,23 @@ html{
   padding-bottom: 5%;
 }
 
+/* ====== Prices section ======= */
+
+
 #section-prices{
   background-color: rgb(240,240,240);
   padding-top: 7%;
   padding-bottom: 5%;
 }
 
+
+/* ====== Contact section ======= */
+
 #section-contact{
-  background-color: rgb(230,230,230);
+  background-color: #689CB0;
   padding-top: 7%;
   padding-bottom: 5%;
 }
-
-.ikon{
-  
-  font-size: 36px;
-  color: #D69722; 
-}
-
-#header-content h3{
-  font-weight: bold;
-}
-
-h4{
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 0%;
-}
-
-.om_oss{
-  
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, #D69722, #D69722, #D69722);
-}
-
 
 /* ======== footer ======== */
 
